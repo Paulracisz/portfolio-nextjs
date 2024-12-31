@@ -1,7 +1,11 @@
 import { BlogPosts } from 'app/components/posts'
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SP } from 'next/dist/shared/lib/utils'
 
 export default function Page() {
   return (
+    <>
+    <SpeedInsights />
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         My Portfolio
@@ -17,5 +21,6 @@ export default function Page() {
         <BlogPosts />
       </div>
     </section>
+    </>
   )
 }
