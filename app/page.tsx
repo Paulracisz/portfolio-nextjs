@@ -1,15 +1,15 @@
 import { BlogPosts } from 'app/components/posts'
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import { SP } from 'next/dist/shared/lib/utils'
 
 export default function Page() {
   return (
     <>
     <SpeedInsights />
     <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
+      <h1 className="mb-8 text-9xl font-semibold">
+        Hi, I'm Paul.
       </h1>
+      <h2 className="mb-8 text-6xl font-semibold">A Software Engineer.</h2>
       <p className="mb-4">
         {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
         Vim's keystroke commands and tabs' flexibility for personal viewing
