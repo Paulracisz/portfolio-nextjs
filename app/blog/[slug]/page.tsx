@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import { CustomMDX } from 'app/components/mdx'
 import { formatDate, getBlogPosts } from 'app/blog/utils'
 import { baseUrl } from 'app/sitemap'
+import notByAIBadge from '../../assets/Written-By-Human-Not-By-AI-Badge-black@2x.png';
 
 export async function generateStaticParams() {
   let posts = getBlogPosts()
@@ -90,7 +91,11 @@ export default function Blog({ params }) {
           {formatDate(post.metadata.publishedAt)}
         </p>
       </div>
-      <article className="prose">
+      <article className="prose text-left">
+        <a rel="noopener noreferrer"
+          target="_blank" href="https://notbyai.fyi/" >
+          <img className="w-40" src={notByAIBadge.src} alt="A Badge that declares that this content was written by a human, not an AI." />
+        </a>
         <CustomMDX source={post.content} />
       </article>
     </section>

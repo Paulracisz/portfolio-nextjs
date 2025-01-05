@@ -6,16 +6,14 @@ export default function Page() {
     <>
     <SpeedInsights />
     <section>
-      <h1 className="mb-8 text-9xl font-semibold">
+      <h1 className="mb-8 text-9xl font-semibold text-center">
         Hi, I'm Paul.
       </h1>
-      <h2 className="mb-8 text-6xl font-semibold">A Software Engineer.</h2>
-      <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+      <h2 className="mb-8 text-6xl font-semibold text-center">A Software Engineer.</h2>
+      <p className="mb-4 font-semibold text-center tracking-wider">
+        {`I’m dedicated to building innovative, intuitive, and scalable solutions `}
+        <br/>
+        {`that empower users and drive impact.`}
       </p>
       <div className="my-8">
         <BlogPosts />
