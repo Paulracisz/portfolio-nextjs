@@ -21,6 +21,7 @@ export function generateMetadata({ params }) {
   let {
     title,
     publishedAt: publishedTime,
+    timeToRead: timeToRead,
     summary: description,
     image,
   } = post.metadata
@@ -36,6 +37,7 @@ export function generateMetadata({ params }) {
       description,
       type: 'article',
       publishedTime,
+      timeToRead,
       url: `${baseUrl}/blog/${post.slug}`,
       images: [
         {
@@ -89,6 +91,8 @@ export default function Blog({ params }) {
       <div className="flex justify-between items-center mt-2 mb-8 text-sm">
         <p className="text-sm text-neutral-600 dark:text-neutral-400">
           {formatDate(post.metadata.publishedAt)}
+          <br/>
+          Reading Duration: {post.metadata.timeToRead}
         </p>
       </div>
       <article className="prose text-left font-sans">
