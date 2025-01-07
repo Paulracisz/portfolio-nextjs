@@ -91,7 +91,7 @@ export default function Blog({ params }) {
           {formatDate(post.metadata.publishedAt)}
         </p>
       </div>
-      <article className="prose text-left">
+      <article className="prose text-left font-sans">
         <a rel="noopener noreferrer"
           target="_blank" href="https://notbyai.fyi/" >
           <img className="w-40" src={notByAIBadge.src} alt="A Badge that declares that this content was written by a human, not an AI." />
