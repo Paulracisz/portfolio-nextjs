@@ -21,7 +21,6 @@ export function generateMetadata({ params }) {
   let {
     title,
     publishedAt: publishedTime,
-    timeToRead: timeToRead,
     summary: description,
     image,
   } = post.metadata
@@ -37,7 +36,6 @@ export function generateMetadata({ params }) {
       description,
       type: 'article',
       publishedTime,
-      timeToRead,
       url: `${baseUrl}/blog/${post.slug}`,
       images: [
         {
@@ -95,7 +93,7 @@ export default function Blog({ params }) {
           Reading Duration: {post.metadata.timeToRead}
         </p>
       </div>
-      <article className="prose text-left font-sans">
+      <article className="prose text-left font-sans text-lg">
         <a rel="noopener noreferrer"
           target="_blank" href="https://notbyai.fyi/" >
           <img className="w-40" src={notByAIBadge.src} alt="A Badge that declares that this content was written by a human, not an AI." />

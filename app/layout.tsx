@@ -45,7 +45,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        'text-black bg-white dark:text-white dark:bg-blue-800'
+        'text-black bg-white dark:text-white dark:bg-blue-950'
       )}
     >
       <body className="antialiased lg:mx-auto max-w-4xl mx-4 mt-8">
