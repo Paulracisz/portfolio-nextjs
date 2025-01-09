@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
     default: `Paul Racisz • Portfolio`,
-    template: '%s | Next.js Portfolio Starter',
+    template: 'Paul Racisz | %s',
   },
   description: 'Portfolio for Paul Racisz.',
   openGraph: {
@@ -45,7 +45,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        'text-black bg-white dark:text-white dark:bg-blue-950'
+        'text-black bg-white dark:text-white dark:bg-neutral-800'
       )}
     >
       <body className="antialiased lg:mx-auto max-w-4xl mx-4 mt-8">

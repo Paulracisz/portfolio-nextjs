@@ -16,7 +16,6 @@ export default function Page() {
         {`that empower users and drive impact.`}
       </p>
       <div className="my-8">
-        <BlogPosts />
       </div>
     </section>
     </>
