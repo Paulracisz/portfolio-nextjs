@@ -23,7 +23,7 @@ export function Navbar() {
           className="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           id="nav"
         >
-          <div className="mb-5 flex flex-row space-x-0 font-sans text-black bg-stone-100 rounded">
+          <div className="font-medium mb-5 flex flex-row space-x-0 font-sans text-black bg-stone-100 rounded">
             {Object.entries(navItems).map(([path, { name }]) => {
               return (
                 <Link
