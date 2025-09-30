@@ -1,26 +1,51 @@
-import { BlogPosts } from 'app/components/posts'
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { SP } from 'next/dist/shared/lib/utils'
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function Page() {
   return (
     <>
-    <SpeedInsights />
-    <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
-      </h1>
-      <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
-      </p>
-      <div className="my-8">
-        <BlogPosts />
-      </div>
-    </section>
+      <SpeedInsights />
+      <section className="relative py-16">
+        {/* ==== Blobs ==== */}
+        {/* Pink blob – left side */}
+        <div id="pink-blob" className="
+          absolute inset-0
+          w-[100%] h-[80%]
+          bg-pink-300/70
+          rounded-full
+          pointer-events-none
+          -z-10
+        " />
+
+        {/* Green blob – right side */}
+        <div id="green-blob" className="
+          absolute inset-0
+          w-[100%] h-[60%]
+          bg-green-600/70
+          rounded-full
+          pointer-events-none
+          -z-10
+        " />
+
+        {/* ==== Content ==== */}
+        <h1 className="mb-8 text-9xl font-semibold text-center relative z-20 text-gray-900">
+          Hi, I’m Paul.
+        </h1>
+
+        <h2 className="mb-8 text-6xl font-semibold text-center">
+          A Software Engineer.
+        </h2>
+
+        <p className="mb-4 font-semibold text-center tracking-wider">
+          I’m dedicated to building{" "}
+          <span className="text-10xl font-bold">innovative,</span>{" "}
+          intuitive, and{" "}
+          <span className="font-bold">scalable</span> solutions
+          <br />
+          that empower users and drive impact.
+        </p>
+
+        <div className="my-8" />
+      </section>
     </>
-  )
+  );
 }

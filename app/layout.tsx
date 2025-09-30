@@ -1,7 +1,5 @@
 import './global.css'
 import type { Metadata } from 'next'
-import { GeistSans } from 'geist/font/sans'
-import { GeistMono } from 'geist/font/mono'
 import { Navbar } from './components/nav'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
@@ -11,15 +9,15 @@ import { baseUrl } from './sitemap'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Next.js Portfolio Starter',
-    template: '%s | Next.js Portfolio Starter',
+    default: `Paul Racisz • Portfolio`,
+    template: 'Paul Racisz | %s',
   },
-  description: 'This is my portfolio.',
+  description: 'Portfolio for Paul Racisz.',
   openGraph: {
-    title: 'My Portfolio',
-    description: 'This is my portfolio.',
+    title: 'Paul Racisz Portfolio',
+    description: 'Portfolio for Paul Racisz.',
     url: baseUrl,
-    siteName: 'My Portfolio',
+    siteName: 'Paul Racisz Portfolio',
     locale: 'en_US',
     type: 'website',
   },
@@ -47,13 +45,11 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        'text-black bg-white dark:text-white dark:bg-black',
-        GeistSans.variable,
-        GeistMono.variable
+        'text-[#2C3E50] bg-[#F9F7F7]'
       )}
     >
-      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
-        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+      <body className="antialiased lg:mx-auto max-w-4xl mx-4 mt-8">
+        <main className="flex-auto min-w-0 flex flex-col px-2 md:px-0">
           <Navbar />
           {children}
           <Footer />
