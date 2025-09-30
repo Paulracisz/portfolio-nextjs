@@ -12,6 +12,7 @@ export default function Page() {
           w-[100%] h-[80%]
           bg-pink-300/70
           rounded-full
+          overflow-x-hidden
           pointer-events-none
           -z-10
         " />
@@ -22,6 +23,7 @@ export default function Page() {
           w-[100%] h-[60%]
           bg-green-600/70
           rounded-full
+          overflow-x-hidden
           pointer-events-none
           -z-10
         " />
