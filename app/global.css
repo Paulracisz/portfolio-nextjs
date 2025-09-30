@@ -18,6 +18,38 @@
   --sh-entity: #e25a1c;
 }
 
+html {
+  background-color: #FFFDD0;
+}
+
+h1, h2 {
+  color: #00674F;
+}
+
+p {
+  color: #556B2F;
+}
+
+span {
+  color: #D4AF37;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#nav {
+  border-radius: 5px;
+}
+
+#green-blob {
+  left: 100%;
+  top: -20%;
+}
+
+#pink-blob {
+  left: -100%;
+  top: 200px;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --sh-class: #4c97f8;

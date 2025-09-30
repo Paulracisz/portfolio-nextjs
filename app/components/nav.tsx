@@ -20,16 +20,16 @@ export function Navbar() {
     <aside className="tracking-tight">
       <div className="lg:sticky lg:top-20">
         <nav
-          className="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
+          className="flex flex-row items-start relative px-0 mb-0 pb-5 fade scroll-pr-6"
           id="nav"
         >
-          <div className="font-medium mb-5 flex flex-row space-x-0 font-sans text-[#1ABC9C] bg-stone-100 rounded">
+          <div className="font-medium flex flex-row md-0 space-x-0 font-sans text-[#129490] bg-white rounded">
             {Object.entries(navItems).map(([path, { name }]) => {
               return (
                 <Link
                   key={path}
                   href={path}
-                  className="border-r-2 border-[#2C3E50] transition-all hover:bg-[#2C3E50] hover:text-[#BDC3C7] flex align-middle relative py-1 px-2 m-1"
+                  className="transition-all hover:bg-[#FFFDD0] hover:text-[#00674F] flex align-middle relative py-1 px-2 m-0"
                 >
                   {name}
                 </Link>
