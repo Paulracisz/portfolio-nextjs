@@ -43,7 +43,7 @@ export default function Page() {
           intuitive, and{" "}
           <span className="font-bold">scalable</span> solutions
           <br />
-          that empower users and drive impact.
+          that empower users and drive <span>impact.</span>
         </p>
 
         <div className="my-8" />
