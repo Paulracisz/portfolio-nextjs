@@ -43,12 +43,16 @@ span {
 
 #green-blob {
   left: 100%;
-  top: -20%;
+  width: 90%;
+  height: 100%;
+  top: -30%;
 }
 
 #pink-blob {
-  left: -100%;
-  top: 200px;
+  left: -80%;
+  width: 90%;
+  height: 100%;
+  top: 30%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -194,4 +198,28 @@ table {
 
 .title {
   text-wrap: balance;
+}
+
+@keyframes floatPink {
+  0%   { transform: translate(0%, 0%)  }
+  25%  { transform: translate(-8%, -4%)  }
+  50%  { transform: translate(-4%, -8%)  }
+  75%  { transform: translate(6%, -2%)  }
+  100% { transform: translate(0%, 0%)  }
+}
+
+@keyframes floatGreen {
+  0%   { transform: translate(0%, 0%) }
+  25%  { transform: translate(6%, 4%) }
+  50%  { transform: translate(2%, 8%) }
+  75%  { transform: translate(-6%, 2%) }
+  100% { transform: translate(0%, 0%) }
+}
+
+/* Tailwind‑compatible utility classes */
+.animate-float-pink {
+  animation: floatPink 12s ease-in-out infinite;
+}
+.animate-float-green {
+  animation: floatGreen 15s ease-in-out infinite;
 }

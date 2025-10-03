@@ -10,23 +10,23 @@ export default function Page() {
         {/* Pink blob – left side */}
         <div id="pink-blob" className="
           absolute inset-0
-          w-[100%] h-[80%]
           bg-pink-300/70
           rounded-full
           overflow-x-hidden
           pointer-events-none
-          -z-10
+          -z-10 
+          animate-float-pink
         " />
 
         {/* Green blob – right side */}
         <div id="green-blob" className="
           absolute inset-0
-          w-[100%] h-[60%]
           bg-green-600/70
           rounded-full
           overflow-x-hidden
           pointer-events-none
           -z-10
+          animate-float-green
         " />
 
         {/* ==== Content ==== */}

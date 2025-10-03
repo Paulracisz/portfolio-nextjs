@@ -21,7 +21,7 @@ export default function Footer() {
       <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-[#1ABC9C] md:flex-row md:space-x-4 md:space-y-0">
         <li>
           <a
-            className="flex items-center transition-all hover:text-[#E67E22]"
+            className="flex items-center transition-all hover:text-[#D4AF37]"
             rel="noopener noreferrer"
             target="_blank"
             href="https://www.linkedin.com/in/paul-racisz-745b11196/"
@@ -32,7 +32,7 @@ export default function Footer() {
         </li>
         <li>
           <a
-            className="flex items-center transition-all hover:text-[#E67E22]"
+            className="flex items-center transition-all hover:text-[#D4AF37]"
             rel="noopener noreferrer"
             target="_blank"
             href="https://github.com/Paulracisz"
@@ -43,24 +43,13 @@ export default function Footer() {
         </li>        
         <li>
           <a
-            className="flex items-center transition-all hover:text-[#E67E22]"
+            className="flex items-center transition-all hover:text-[#D4AF37]"
             rel="noopener noreferrer"
             target="_blank"
             href="/rss"
           >
             <ArrowIcon />
             <p className="ml-2 h-7">RSS</p>
-          </a>
-        </li>
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-[#E67E22]"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://read.cv/paulracisz"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">CV</p>
           </a>
         </li>
       </ul>
