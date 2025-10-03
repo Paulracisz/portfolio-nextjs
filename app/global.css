@@ -1,6 +1,8 @@
 @import 'tailwindcss';
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+
 ::selection {
   background-color: #47a3f3;
   color: #fefefe;
@@ -222,4 +224,33 @@ table {
 }
 .animate-float-green {
   animation: floatGreen 15s ease-in-out infinite;
+}
+
+/* ---------- Metallic shine keyframes ---------- */
+@keyframes metallic-shine {
+  0% {
+    background-position: -150% 0;
+  }
+  50% {
+    background-position: 150% 0;
+  }
+  100% {
+    background-position: -150% 0;
+  }
+}
+
+/* Tailwind‑compatible utility */
+.animate-metallic {
+  animation: metallic-shine 2.5s linear infinite;
+}
+
+/* Gradient that looks like a thin reflective stripe */
+.metallic-gradient {
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
 }

@@ -56,7 +56,7 @@ const experience: TimelineItem[] = [
     dates: "May 2021 – Present",
     description: [
            // ----- Mobile apps (VegaTouch Mira & Eclipse) -----
-      "Led development of VegaTouch Mira and VegaTouch Eclipse, native mobile applications (iOS & Android) that serve as the primary control hub for RV smart‑home systems.",
+      "Led development of VegaTouch Mira and VegaTouch Eclipse, AngularJS mobile applications (iOS & Android) that serve as the primary control hub for RV smart‑home systems.",
       "Implemented seamless integration with a wide range of RV subsystems including:",
       "HVAC climate control (temperature set‑points, fan modes, zone scheduling)",
       "Lighting groups (dimming, scene presets, custom RGB lighting modes)",
@@ -77,7 +77,7 @@ export default function WorkExperience() {
   return (
     <section>
       <h1 className="mt-20 text-center font-semibold text-5xl mb-8 tracking-tighter">
-        Work Experience
+        Experience
       </h1>
       <p className="mb-8 text-xl font-semibold text-center tracking-wider">
         Leveraging <span>{yearsOfExperience}</span> years of hands‑on

@@ -17,7 +17,7 @@ export interface TimelineItem {
 /**
  * Props
  *   items – array of timeline entries
- *   lineColor – Tailwind colour class for the vertical line (default: gray‑300)
+ *   lineColor – Tailwind colour class for the vertical line
  */
 export default function Timeline({
   items,
