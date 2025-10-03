@@ -1,10 +1,11 @@
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import WorkExperience from "./components/work-experience";
 
 export default function Page() {
   return (
     <>
       <SpeedInsights />
-      <section className="relative py-16">
+      <section className="relative py-16 mb-20">
         {/* ==== Blobs ==== */}
         {/* Pink blob – left side */}
         <div id="pink-blob" className="
@@ -37,7 +38,7 @@ export default function Page() {
           A Software Engineer.
         </h2>
 
-        <p className="mb-4 font-semibold text-center tracking-wider">
+        <p className="mb-4 text-xl font-semibold text-center tracking-wider">
           I’m dedicated to building{" "}
           <span className="text-10xl font-bold">innovative,</span>{" "}
           intuitive, and{" "}
@@ -48,6 +49,7 @@ export default function Page() {
 
         <div className="my-8" />
       </section>
+      <WorkExperience />
     </>
   );
 }
