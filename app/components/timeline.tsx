@@ -21,7 +21,6 @@ export interface TimelineItem {
  */
 export default function Timeline({
   items,
-  lineColor = "bg-gray-300",
 }: {
   items: TimelineItem[];
   lineColor?: string;
@@ -30,7 +29,7 @@ export default function Timeline({
     <div className="relative pl-8">
       {/* Vertical line */}
       <div
-        className={`absolute left-4 top-0 h-full w-0.5 ${lineColor}`}
+        className={`absolute left-4 top-0 h-full w-0.5 bg-[#D4AF37]`}
         aria-hidden="true"
       />
 
@@ -41,10 +40,10 @@ export default function Timeline({
             {/* Dot + optional icon */}
             <div className="relative flex flex-col items-center mr-6 flex-shrink-0">
               {/* Dot */}
-              <span className="block w-4 h-4 rounded-full bg-white border-2 border-indigo-600" />
+              <span className="block w-4 h-4 rounded-full bg-white border-2" />
               {/* Icon container (optional) */}
               {item.icon && (
-                <div className="-mt-2 mb-2 flex items-center justify-center w-8 h-8 bg-indigo-100 rounded-full">
+                <div className="-mt-2 mb-2 flex items-center justify-center w-8 h-8 bg-white rounded-full">
                   {item.icon}
                 </div>
               )}
@@ -52,21 +51,21 @@ export default function Timeline({
 
             {/* Content */}
             <div className="flex-1 pt-0.5">
-              <h3 className="text-lg font-semibold text-indigo-700">
+              <h3 className="text-lg text-black font-semibold">
                 {item.title}
               </h3>
-              <p className="text-sm text-gray-500">{item.dates}</p>
-              <p className="mt-1 text-gray-800">{item.organization}</p>
+              <p className="text-sm text-black font-semibold">{item.dates}</p>
+              <p className="mt-1 font-medium text-black">{item.organization}</p>
 
               {/* Description – support string or array of bullets */}
               {Array.isArray(item.description) ? (
-                <ul className="list-disc list-inside mt-2 space-y-1 text-gray-700">
+                <ul className="list-disc list-inside mt-2 space-y-1 text-black font-medium">
                   {item.description.map((line, i) => (
                     <li key={i}>{line}</li>
                   ))}
                 </ul>
               ) : (
-                <p className="mt-2 text-gray-700">{item.description}</p>
+                <p className="mt-2">{item.description}</p>
               )}
             </div>
           </li>

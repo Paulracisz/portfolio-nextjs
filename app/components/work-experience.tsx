@@ -29,9 +29,16 @@ const experience: TimelineItem[] = [
     title: "Software Engineering Student",
     dates: "October 2019 – October 2020",
     description: [
-      "Built reusable UI components with React & Tailwind.",
-      "Implemented CI/CD pipelines for rapid releases.",
-      "Mentored junior developers on accessibility best practices.",
+      "Completed a 12‑month intensive curriculum:",
+      "3 months: Vanilla JavaScript & core web fundamentals",
+      "3 months: Modern React (hooks, context, routing)",
+      "3 months: Python & Django backend development",
+      "3 months: Full‑stack React + Python projects",
+
+      // flagship projects
+      "Built a Pokémon‑style collection game (React front‑end, Python API back‑end)",
+      "Created a Twitter‑like mock social‑media platform that consumed an external API",
+      "Recieved both Front-End Web Development and Full-Stack Development certifications accredited by Butler University."
     ],
   },
   {
@@ -48,8 +55,20 @@ const experience: TimelineItem[] = [
     title: "Mobile Developer",
     dates: "May 2021 – Present",
     description: [
-      "Designed REST APIs with Express & PostgreSQL.",
-      "Integrated AWS Lambda functions for serverless workloads.",
+           // ----- Mobile apps (VegaTouch Mira & Eclipse) -----
+      "Led development of VegaTouch Mira and VegaTouch Eclipse, native mobile applications (iOS & Android) that serve as the primary control hub for RV smart‑home systems.",
+      "Implemented seamless integration with a wide range of RV subsystems including:",
+      "HVAC climate control (temperature set‑points, fan modes, zone scheduling)",
+      "Lighting groups (dimming, scene presets, custom RGB lighting modes)",
+      "Electrical components – inverters, solar‑panel charge controllers, battery management systems",
+      "Motorized accessories – slides, awnings, lifts such as tv lifts, and various machines",
+      // ----- Embedded apps (VegaTouch Orion) -----
+      "Developed VegaTouch Orion – a suite of embedded touchscreen interfaces mounted on standalone screens throughout the RV.",
+      "Implemented core feature set on production units (HVAC, lighting, power‑management, motorized accessories) while adding AV controls:",
+      "Media source selection (Bluetooth, HDMI, USB, streaming services)",
+      "Multi‑zone audio routing and volume balancing",
+      "Video input switching",
+      "Optimized UI for low‑power, always‑on hardware (One-time binding, idle‑sleep timers)",
     ],
   },
 ];
@@ -61,7 +80,7 @@ export default function WorkExperience() {
         Work Experience
       </h1>
       <p className="mb-8 text-xl font-semibold text-center tracking-wider">
-        Leveraging <span>{yearsOfExperience}</span> years of hands‑on
+        Leveraging <span>{yearsOfExperience}</span> years of hands‑on
         experience, I craft memorable, user‑focused solutions—whether that’s a
         sleek mobile app or a responsive web application.
       </p>

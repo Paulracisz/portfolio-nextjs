@@ -23,11 +23,11 @@ html {
   overflow-x: hidden;
 }
 
-h1, h2 {
+h1, h2, h3 {
   color: #00674F;
 }
 
-p {
+p, ul {
   color: #556B2F;
 }
 
