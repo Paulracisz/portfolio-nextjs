@@ -21,22 +21,14 @@ export type Project = {
 import lucernaImg from "../assets/lucerna.png";
 
 export const projects: Project[] = [
-  {
-    id: "lucerna",
-    title: "React Native Bible Reader App",
-    tagline: "I created an open source Bible reader app using free domain translations to combine my love for faith and technology!",
-    thumbnail: lucernaImg,
-    alt: "Screenshot of Lucerna Bible App",
-    href: "https://github.com/Paulracisz/lucerna-bible-app",
-  },  
-  {
-    id: "soon",
-    title: "More Coming Soon!",
-    tagline: "",
-    thumbnail: Cogs,
-    alt: "Cog Icon",
-    href: "",
-  },
+  // {
+  //   id: "soon",
+  //   title: "More Coming Soon!",
+  //   tagline: "",
+  //   thumbnail: Cogs,
+  //   alt: "Cog Icon",
+  //   href: "",
+  // },
 ];
 
 /* -----------------------------------------------------------------

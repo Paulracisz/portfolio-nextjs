@@ -60,15 +60,15 @@ const experience: TimelineItem[] = [
       "Implemented seamless integration with a wide range of RV subsystems utilizing CAN protocol including:",
       "HVAC climate control (temperature set‑points, fan modes, zone scheduling)",
       "Lighting groups (dimming, scene presets, custom RGB lighting modes)",
+      "The Lithionics Battery Monitoring System which included, voltage calculations, diagnostics page with detailed hardware information, and optional rendering based on state selection of user setting.",
       "Electrical components – inverters, solar‑panel charge controllers, battery management systems",
       "Motorized accessories – slides, awnings, lifts such as tv lifts, and various machines",
       // ----- Embedded apps (VegaTouch Orion) -----
       "Developed VegaTouch Orion – a suite of embedded touchscreen interfaces mounted on standalone screens throughout the RV.",
       "Implemented core feature set on production units (HVAC, lighting, power‑management, motorized accessories) while adding AV controls:",
       "Media source selection (Bluetooth, HDMI, USB, streaming services)",
-      "Multi‑zone audio routing and volume balancing",
-      "Video input switching",
       "Optimized UI for low‑power, always‑on hardware (One-time binding, idle‑sleep timers)",
+      "Resolved a critical end‑user issue causing an overnight screen reboot that left a bright display active in Newell Motorhomes’ bedroom, restoring normal operation and preventing potential safety hazards."
     ],
   },
 ];

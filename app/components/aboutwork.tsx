@@ -1,15 +1,15 @@
 import Image from "next/image";
 import Mira from "../assets/mira.webp";
 import Eclipse from "../assets/eclipse.webp";
-import Newell from '../assets/newell.webp';
-import Nebula from '../assets/nebula.webp';
-import Aurora from '../assets/aurora.webp';
+import Newell from "../assets/newell.webp";
+import Nebula from "../assets/nebula.webp";
+import Aurora from "../assets/aurora.webp";
 import MiraScreen1 from "../assets/mirascreen2.png";
 import MiraScreen3 from "../assets/mirascreen3.png";
 import MiraScreen4 from "../assets/mirascreen4.png";
-import NewellScreen1 from '../assets/newellscreen1.png';
-import NebulaScreen1 from '../assets/nebulascreen1.webp';
-import AuroraScreen1 from '../assets/aurorascreen1.webp';
+import NewellScreen1 from "../assets/newellscreen1.png";
+import NebulaScreen1 from "../assets/nebulascreen1.webp";
+import AuroraScreen1 from "../assets/aurorascreen1.webp";
 
 export default function AboutWork() {
   return (
@@ -70,8 +70,8 @@ export default function AboutWork() {
             src={Aurora}
             className="rounded-lg w-72 h-auto"
           />
-        </div>        
-        
+        </div>
+
         <div className="flex flex-col items-center gap-4">
           <Image
             alt="Nebula logo"
