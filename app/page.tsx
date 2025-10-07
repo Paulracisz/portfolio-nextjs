@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <>
       <SpeedInsights />
-      <section className="relative py-16 mb-20">
+      <section className="relative py-16 mb-[35%]">
         {/* ==== Blobs ==== */}
         {/* Pink blob – left side */}
         <div id="pink-blob" className="

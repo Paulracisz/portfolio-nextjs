@@ -57,7 +57,7 @@ const experience: TimelineItem[] = [
     description: [
            // ----- Mobile apps (VegaTouch Mira & Eclipse) -----
       "Led development of VegaTouch Mira and VegaTouch Eclipse, AngularJS mobile applications (iOS & Android) that serve as the primary control hub for RV smart‑home systems.",
-      "Implemented seamless integration with a wide range of RV subsystems including:",
+      "Implemented seamless integration with a wide range of RV subsystems utilizing CAN protocol including:",
       "HVAC climate control (temperature set‑points, fan modes, zone scheduling)",
       "Lighting groups (dimming, scene presets, custom RGB lighting modes)",
       "Electrical components – inverters, solar‑panel charge controllers, battery management systems",

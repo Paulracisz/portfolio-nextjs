@@ -26,7 +26,7 @@ export default function Timeline({
   lineColor?: string;
 }) {
   return (
-    <div className="relative pl-8">
+    <div className="relative pl-8 mb-[30%]">
       {/* Vertical line */}
       <div
         className={`absolute left-4 top-0 h-full w-0.5 bg-[#D4AF37]`}
