@@ -23,7 +23,13 @@ export function Navbar() {
         >
           <div className="font-medium flex flex-row md-0 space-x-0 font-sans bg-white rounded">
             {Object.entries(navItems).map(([path, { name }]) => {
-              const isActive = pathname === path;  
+              let isActive = pathname === path;  
+              if (pathname.includes("blog")) {
+                // handle subdomains (/blog/BBB)
+                if (path.includes("blog")) {
+                  isActive = true;
+                }
+              }
               
               return (
                 <Link
