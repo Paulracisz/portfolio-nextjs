@@ -66,9 +66,9 @@ const experience: TimelineItem[] = [
       // ----- Embedded apps (VegaTouch Orion) -----
       "Developed VegaTouch Orion – a suite of embedded touchscreen interfaces mounted on standalone screens throughout the RV.",
       "Implemented core feature set on production units (HVAC, lighting, power‑management, motorized accessories) while adding AV controls:",
-      "Media source selection (Bluetooth, HDMI, USB, streaming services)",
+      "Media source selection for Smart TVs such as Roku, Sony, Apple TVs: (Bluetooth, HDMI, streaming services: Netflix, Disney+, Hulu)",
       "Optimized UI for low‑power, always‑on hardware (One-time binding, idle‑sleep timers)",
-      "Resolved a critical end‑user issue causing an overnight screen reboot that left a bright display active in Newell Motorhomes’ bedroom, restoring normal operation and preventing potential safety hazards."
+      "Diagnosed and fixed an overnight screen‑reboot bug that caused the display to stay on in Newell Motorhomes’ bedroom units, eliminating unwanted 3 AM wake‑ups and restoring normal operation for customers."
     ],
   },
 ];
