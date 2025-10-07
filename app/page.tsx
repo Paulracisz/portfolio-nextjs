@@ -2,6 +2,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import WorkExperience from "./components/work-experience";
 import Projects from "./components/projects";
 import AboutWork from "./components/aboutwork";
+import ScrollTopButton from "./components/ScrollTopButton";
 
 export default function Page() {
   return (
@@ -53,7 +54,8 @@ export default function Page() {
       </section>
       <WorkExperience />
       <AboutWork />
-       <Projects />
+      <Projects />
+      <ScrollTopButton />
     </>
   );
 }
