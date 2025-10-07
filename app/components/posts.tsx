@@ -1,36 +1,57 @@
-import Link from 'next/link'
-import { formatDate, getBlogPosts } from 'app/blog/utils'
+
+import Link from 'next/link';
+import Image from 'next/image';
+import { formatDate, getBlogPosts } from 'app/blog/utils';
 
 export function BlogPosts() {
-  let allBlogs = getBlogPosts()
+  const allBlogs = getBlogPosts();
+
+  // Sort newest → oldest
+  const sorted = allBlogs.sort((a, b) =>
+    new Date(b.metadata.publishedAt) > new Date(a.metadata.publishedAt) ? 1 : -1
+  );
 
   return (
-    <div>
-      {allBlogs
-        .sort((a, b) => {
-          if (
-            new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)
-          ) {
-            return -1
-          }
-          return 1
-        })
-        .map((post) => (
+    <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      {sorted.map((post) => {
+        const { slug, metadata } = post;
+        const { title, publishedAt, image, tag } = metadata;
+
+        const thumbSrc =
+          typeof image === 'string'
+            ? image
+            : null;
+
+        return (
           <Link
-            key={post.slug}
-            className="flex flex-col space-y-1 mb-4"
-            href={`/blog/${post.slug}`}
+            key={slug}
+            href={`/blog/${slug}`}
+            className="group block rounded-xl overflow-hidden border border-gray-200 hover:border-[#D4AF37] transition-shadow bg-white hover:shadow-lg"
           >
-            <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
-              <p className="text-[#2C3E50] w-[100px] tabular-nums hover:text-[#E67E22]">
-                {formatDate(post.metadata.publishedAt, false)}
+            {thumbSrc && (
+              <div className="relative h-48 w-full overflow-hidden bg-gray-100">
+                <Image
+                  src={thumbSrc}
+                  alt={`Thumbnail for ${title}`}
+                  fill                 // makes the image fill the parent div
+                  className="object-cover group-hover:scale-105 transition-transform"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
+              </div>
+            )}
+
+            <div className="p-4">
+              <p className="text-sm font-semibold text-[#2C3E50] tabular-nums">
+                {formatDate(publishedAt, false)}
               </p>
-              <p className="text-[#2C3E50] tracking-tight hover:text-[#E67E22]">
-                {post.metadata.title}
-              </p>
+              <p id="tags" className="text-sm font-bold text-[#D4AF37] tabular-nums"> { tag }</p>
+              <h2 className="mt-1 text-lg font-semibold text-[#2C3E50] group-hover:text-[#D4AF37] transition-colors">
+                {title}
+              </h2>
             </div>
           </Link>
-        ))}
+        );
+      })}
     </div>
-  )
+  );
 }

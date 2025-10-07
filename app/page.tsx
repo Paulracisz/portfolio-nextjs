@@ -1,29 +1,35 @@
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import WorkExperience from "./components/work-experience";
+import Projects from "./components/projects";
+import AboutWork from "./components/aboutwork";
+import ScrollTopButton from "./components/ScrollTopButton";
 
 export default function Page() {
   return (
     <>
       <SpeedInsights />
-      <section className="relative py-16">
+      <section className="relative py-16 mb-[35%]">
         {/* ==== Blobs ==== */}
         {/* Pink blob – left side */}
         <div id="pink-blob" className="
           absolute inset-0
-          w-[100%] h-[80%]
           bg-pink-300/70
           rounded-full
+          overflow-x-hidden
           pointer-events-none
-          -z-10
+          -z-10 
+          animate-float-pink
         " />
 
         {/* Green blob – right side */}
         <div id="green-blob" className="
           absolute inset-0
-          w-[100%] h-[60%]
           bg-green-600/70
           rounded-full
+          overflow-x-hidden
           pointer-events-none
           -z-10
+          animate-float-green
         " />
 
         {/* ==== Content ==== */}
@@ -35,17 +41,21 @@ export default function Page() {
           A Software Engineer.
         </h2>
 
-        <p className="mb-4 font-semibold text-center tracking-wider">
+        <p className="mb-4 text-xl font-semibold text-center tracking-wider">
           I’m dedicated to building{" "}
-          <span className="text-10xl font-bold">innovative,</span>{" "}
+          <span className="text-10xl font-bold animate-metallic">innovative,</span>{" "}
           intuitive, and{" "}
-          <span className="font-bold">scalable</span> solutions
+          <span className="font-bold metallic-gradient animate-metallic bg-clip-text text-transparent">scalable</span> solutions
           <br />
-          that empower users and drive impact.
+          that empower users and drive <span>impact.</span>
         </p>
 
         <div className="my-8" />
       </section>
+      <WorkExperience />
+      <AboutWork />
+      <Projects />
+      <ScrollTopButton />
     </>
   );
 }

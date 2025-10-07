@@ -1,52 +1,38 @@
 ---
-title: 'The Power of Static Typing in Programming'
-publishedAt: '2024-04-07'
+title: 'Common Software Engineering Interview Questions'
+publishedAt: '2025-10-07'
 summary: 'In the ever-evolving landscape of software development, the debate between dynamic and static typing continues to be a hot topic.'
+tag: "Tech"
+image: "/common-thumbnail.png"
 ---
 
-In the ever-evolving landscape of software development, the debate between dynamic and static typing continues to be a hot topic. While dynamic typing offers flexibility and rapid development, static typing brings its own set of powerful advantages that can significantly improve the quality and maintainability of code. In this post, we'll explore why static typing is crucial for developers, accompanied by practical examples through markdown code snippets.
+In 2025, the job market for Software Engineering is highly competitive, so in order to have the best chance for success, you need to be as prepared as possible for your interview, and go over common interview questions. In this blog post, I am going to cover some of the most common ones so that you can stand out as a top candidate.
 
-## Improved Code Quality and Safety
+## How to Prepare for Your Interview
 
-One of the most compelling reasons to use static typing is the improvement it brings to code quality and safety. By enforcing type checks at compile time, static typing catches errors early in the development process, reducing the chances of runtime errors.
+In order to properly prepare for your interview, you need to closely read the job description to determine what type of software engineering job you applied for. If you applied to a front-end position, you will need to brush up on skills like React, and Tailwind. Read the description and familiarize yourself with their tech stack.
 
-```ts
-function greet(name: string): string {
-  return `Hello, ${name}!`
-}
+## 5 Common Front End Questions:
 
-// This will throw an error at compile time, preventing potential runtime issues.
-let message: string = greet(123)
-```
+1) What is a CDN?
 
-## Enhanced Readability and Maintainability
+Answer: CDN stands for content delivery network and it is a system that delivers content to users based on their geograhpical location. This can be used to reduce latency and improve loading times. CDNs can also be used to improve security, such as protecting against DDos attacks.
 
-Static typing makes code more readable and maintainable. By explicitly declaring types, developers provide a clear contract of what the code does, making it easier for others (or themselves in the future) to understand and modify the codebase.
+2) What is the difference between let, var, and const?
 
-## Facilitates Tooling and Refactoring
+Answer: let, var and const are keywords used to define variables in JavaScript. The difference between them is the scoping of the variable once you assign it. For example, let is used to block scope your variable, meaning that it is only avaiable to be used inside of the braces or block that you assigned it. Var is function scoped, meaning that it can be used anywhere within the function that you declared that variable. And lastly, const is also block scoped, but it's utility comes more from the fact that it is used to declare that the variable cannot be reassigned, or changed.
 
-Modern IDEs leverage static typing to offer advanced features like code completion, refactoring, and static analysis. These tools can automatically detect issues, suggest fixes, and safely refactor code, enhancing developer productivity and reducing the likelihood of introducing bugs during refactoring.
+3) What is virtual DOM in React?
 
-```csharp
-// Refactoring example: Renaming a method in C#
-public class Calculator {
-    public int Add(int a, int b) {
-        return a + b;
-    }
-}
+Answer: DOM stands for Document Object Model in HTML. In React, there is a Virtual DOM that is exactly like the standard DOM, but the difference is React updates the Virtual DOM which is like a clone of the regular DOM. The virtual DOM then only updates what was changed in the regular DOM because updating the whole DOM on re-renders would give slow performance.
 
-// After refactoring `Add` to `Sum`, all references are automatically updated.
-public class Calculator {
-    public int Sum(int a, int b) {
-        return a + b;
-    }
-}
-```
+## 5 Common Full Stack Questions:
 
-## Performance Optimizations
 
-Static typing can lead to better performance. Since types are known at compile time, compilers can optimize the generated code more effectively. This can result in faster execution times and lower resource consumption.
+
+## 5 Soft Skills Questions:
+
 
 ## Conclusion
 
-Static typing offers numerous benefits that contribute to the development of robust, efficient, and maintainable software. By catching errors early, enhancing readability, facilitating tooling, and enabling optimizations, static typing is an invaluable asset for developers. As the software industry continues to mature, the importance of static typing in ensuring code quality and performance cannot be overstated. Whether you're working on a large-scale enterprise application or a small project, embracing static typing can lead to better software development outcomes.
+After reviewing these questions, you will be more prepared for your software engineering interview. If you combine these answers with practicing coding skills, you should remain sharp for the call! Good luck and godspeed.
