@@ -15,7 +15,7 @@ export function BlogPosts() {
     <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       {sorted.map((post) => {
         const { slug, metadata } = post;
-        const { title, publishedAt, image } = metadata;
+        const { title, publishedAt, image, tag } = metadata;
 
         const thumbSrc =
           typeof image === 'string'
@@ -41,9 +41,10 @@ export function BlogPosts() {
             )}
 
             <div className="p-4">
-              <p className="text-sm text-[#2C3E50] tabular-nums">
+              <p className="text-sm font-semibold text-[#2C3E50] tabular-nums">
                 {formatDate(publishedAt, false)}
               </p>
+              <p id="tags" className="text-sm font-bold text-[#D4AF37] tabular-nums"> { tag }</p>
               <h2 className="mt-1 text-lg font-semibold text-[#2C3E50] group-hover:text-[#D4AF37] transition-colors">
                 {title}
               </h2>

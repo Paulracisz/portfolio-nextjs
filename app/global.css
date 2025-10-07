@@ -9,6 +9,9 @@
 }
 
 :root {
+  --gold-text: #D4AF37;
+  --green-text: #00674F;
+  --light-green-text: #556B2F;
   --sh-class: #2d5e9d;
   --sh-identifier: #354150;
   --sh-sign: #8996a3;
@@ -28,6 +31,10 @@ html {
 
 h1, h2, h3 {
   color: #00674F;
+}
+
+#tags {
+  color: #D4AF37;
 }
 
 p, ul {
