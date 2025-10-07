@@ -83,6 +83,7 @@ export default function Blog({ params }) {
           }),
         }}
       />
+      <img width={550} src={post.metadata.image} alt="article thumbnail"/>
       <h1 className="title font-semibold text-2xl tracking-tighter">
         {post.metadata.title}
       </h1>
