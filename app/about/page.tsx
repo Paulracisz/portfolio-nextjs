@@ -30,7 +30,7 @@ export default function About() {
       </p>
       <Image src={AboutPic1} height={250} className="rounded m-10 object-contain" alt="photo of me" />
       </section>
-      <p>My Github Contribution Chart!</p>
+      <p className="font-medium">My Github Contribution Chart!</p>
       <img src="http://ghchart.rshah.org/Paulracisz" className="m-10" alt="Github chart" />
       <section className="flex flex-row flex-wrap width-[100%]">
       <Image width={300} className="m-5 object-contain" src={AboutPic2} alt="image of a keyboard" />
