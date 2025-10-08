@@ -76,10 +76,10 @@ export default function Contact() {
   // 3️⃣ Render the UI
   // -----------------------------------------------------------------
   return (
-    <section className="max-w-lg mx-auto p-6">
+    <section className="max-w-lg">
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">Contact</h1>
 
-      <div className="space-y-4">
+      <div className="space-y-4 max-w-sm">
         {/* Optional name --------------------------------------------------- */}
         <div>
           <span className="asterisk" >* </span> Denotes a required field. <br />
@@ -133,7 +133,7 @@ export default function Contact() {
           type="button"
           onClick={handleSendEmail}
           disabled={!subject.trim() || !message.trim()}
-          className="inline-flex items-center justify-center rounded bg-black px-4 py-2 text-white hover:bg-primary-700 hover:cursor-pointer disabled:cursor-not-allowed disabled:opacity-50"
+          className="inline-flex items-center justify-center rounded bg-white px-4 py-2 text-black hover:bg-primary-700 hover:cursor-pointer disabled:cursor-not-allowed disabled:opacity-50"
         >
           Send Mail
         </button>
