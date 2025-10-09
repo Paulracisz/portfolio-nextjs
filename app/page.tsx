@@ -4,6 +4,36 @@ import Projects from "./components/projects";
 import AboutWork from "./components/aboutwork";
 import ScrollTopButton from "./components/ScrollTopButton";
 
+
+
+// TODO:
+
+// [ ] Finish Interview Questions Article
+
+// [ ] Add hover element to contact form submit button
+
+// [ ] Add a component to add more than one project demo, maybe like 
+// a carousel or something.
+
+// [ ] Create CSS variables and use those instead of hardcoded
+
+// [ ] Make all elements match the color scheme
+
+// [ ] Add more moving components or interactive elements
+
+// [ ] Maybe change about work section to have screenshots of
+// projects I worked on (like Lithionics) instead of just
+// generic pictures of our apps.
+
+// [ ] Pass accessability checks 
+
+// [ ] Add professional photo from Monica once I get it.
+
+// [ ] Add comments and refactor code
+
+// Progress:
+// [          ] 0/10
+
 export default function Page() {
   return (
     <>
