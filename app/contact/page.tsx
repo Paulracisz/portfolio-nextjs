@@ -81,8 +81,8 @@ export default function Contact() {
 
       <div className="space-y-4 max-w-xs">
         {/* Optional name --------------------------------------------------- */}
+          <span className="asterisk" >* </span> <span className="denotes">Denotes a required field. </span><br />
         <div>
-          <span className="asterisk" >* </span> Denotes a required field. <br />
           <label htmlFor="name" id="name" className="mt-1 text-lg font-semibold text-[#00674F] group-hover:text-[#D4AF37] transition-colors">
             Your name (optional)
           </label>
@@ -133,7 +133,7 @@ export default function Contact() {
           type="button"
           onClick={handleSendEmail}
           disabled={!subject.trim() || !message.trim()}
-          className="inline-flex items-center justify-center rounded bg-white px-4 py-2 text-[#00674F] hover:bg-primary-700 hover:cursor-pointer disabled:cursor-not-allowed disabled:opacity-50"
+          className="inline-flex items-center justify-center rounded font-semibold bg-white px-4 py-2 text-[#00674F] hover:cursor-pointer disabled:cursor-not-allowed disabled:opacity-50"
         >
           Send Mail
         </button>
