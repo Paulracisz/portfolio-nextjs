@@ -1,16 +1,13 @@
 // components/DemoEmbed.tsx
 export default function DemoEmbed() {
   return (
-    <div style={{ position: 'relative', paddingTop: '56.25%' /* 16:9 */ }}>
+    <div style={{ position: 'relative' /* 16:9 */ }}>
       <iframe
         src="https://lucerna-bible-app.vercel.app"
         title="Lucerna Bible App Demo"
         style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
           width: '100%',
-          height: '100%',
+          height: '80vh',
           border: 'none',
           borderRadius: '12px',
           boxShadow: '0 4px 12px rgba(0,0,0,0.15)',

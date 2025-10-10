@@ -29,6 +29,13 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
+
 h1, h2, h3 {
   color: #00674F;
 }
