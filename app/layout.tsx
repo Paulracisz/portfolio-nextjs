@@ -9,7 +9,7 @@ import { baseUrl } from './sitemap'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: `Paul Racisz • Portfolio`,
+    default: `Paul Racisz | Portfolio`,
     template: 'Paul Racisz | %s',
   },
   description: 'Portfolio for Paul Racisz.',
