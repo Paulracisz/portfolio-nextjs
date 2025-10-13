@@ -48,7 +48,8 @@ export default function RootLayout({
         'text-[#2C3E50] bg-[#F9F7F7]'
       )}
     >
-      <body className="antialiased lg:mx-auto max-w-4xl mx-4 mt-8">
+      <body className="antialiased lg:mx-auto max-w-4xl mx-4 mt-8"> 
+      <link rel="icon" href="/favicon.png" />
         <main className="flex-auto min-w-0 flex flex-col px-2 md:px-0">
           <Navbar />
           {children}

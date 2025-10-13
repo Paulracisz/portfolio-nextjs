@@ -87,7 +87,7 @@ export default function Contact() {
           <span className="asterisk" >* </span> <span className="denotes">Denotes a required field. </span><br />
         <div>
           <label htmlFor="name" id="name" className="mt-1 text-lg font-semibold text-[#00674F] group-hover:text-[#D4AF37] transition-colors">
-            Your name (optional)
+            Name
           </label>
           <input
             id="name"
