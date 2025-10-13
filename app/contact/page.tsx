@@ -31,7 +31,10 @@ function buildMailtoLink({
   const params = new URLSearchParams();
   setIfString(params, "subject", subject);
   setIfString(params, "body", body);
-  return `mailto:${to}?${params.toString()}`;
+
+  // Convert the +‑encoded spaces to %20 (or just plain spaces)
+  const query = params.toString().replace(/\+/g, "%20");
+  return `mailto:${to}?${query}`;
 }
 
 /* --------------------------------------------------------------

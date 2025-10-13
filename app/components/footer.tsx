@@ -1,3 +1,5 @@
+import ScrollTopButton from "./ScrollTopButton"
+
 function ArrowIcon() {
   return (
     <svg

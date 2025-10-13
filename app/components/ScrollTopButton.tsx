@@ -8,7 +8,7 @@ export default function ScrollTopButton() {
   }, []);
 
   return (
-    <section className="flex content-center justify-center">
+    <section className="fixed bottom-5 right-5 z-50">
       <button
         onClick={scrollToTop}
         aria-label="Scroll to top"

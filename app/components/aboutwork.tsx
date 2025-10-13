@@ -4,12 +4,16 @@ import Eclipse from "../assets/eclipse.webp";
 import Newell from "../assets/newell.webp";
 import Nebula from "../assets/nebula.webp";
 import Aurora from "../assets/aurora.webp";
+import Winnebago from '../assets/winnebago.webp';
 import MiraScreen1 from "../assets/mirascreen2.png";
 import MiraScreen3 from "../assets/mirascreen3.png";
 import MiraScreen4 from "../assets/mirascreen4.png";
 import NewellScreen1 from "../assets/newellscreen1.png";
 import NebulaScreen1 from "../assets/nebulascreen1.webp";
+import NebulaScreen2 from '../assets/nebulascreen2.png';
 import AuroraScreen1 from "../assets/aurorascreen1.webp";
+import WinnebagoScreen1 from '../assets/winnebago-1.webp';
+import WinnebagoScreen2 from '../assets/winnebago-2.webp';
 
 export default function AboutWork() {
   return (
@@ -53,7 +57,7 @@ export default function AboutWork() {
 
       {/* ----- VegaTouch Orion ----- */}
       <h1 className="mt-20 text-center font-semibold text-5xl mb-8 tracking-tighter">
-        VegaTouch Orion
+        VegaTouch Orion & Winnebago Journey
       </h1>
 
       {/* ── Responsive grid ── */}
@@ -78,21 +82,42 @@ export default function AboutWork() {
             src={Nebula}
             className="rounded-lg w-72 h-auto"
           />
+          <Image
+            alt="Winnebago logo"
+            src={Winnebago}
+            className="rounded-lg w-72 h-auto"
+          />
         </div>
 
+
         <Image
-          alt="Home page in Mira app"
+          alt="Home page in Newell app"
           src={NewellScreen1}
           className="rounded-lg w-72 h-auto"
         />
         <Image
-          alt="Lights control page in Mira app"
+          alt="home control page in Nebula app"
           src={NebulaScreen1}
           className="rounded-lg w-72 h-auto"
         />
         <Image
-          alt="HVAC control page in Mira app"
-          src={AuroraScreen1}
+            alt="light control page in Aurora app"
+            src={AuroraScreen1}
+            className="rounded-lg w-72 h-auto"
+        />
+        <Image
+          alt="AV page in Nebula app"
+          src={NebulaScreen2}
+          className="rounded-lg w-72 h-auto"
+        />
+        <Image
+          alt="home page in Winnebago app"
+          src={WinnebagoScreen1}
+          className="rounded-lg w-72 h-auto"
+        />
+        <Image
+          alt="HVAC control page in Winnebago app"
+          src={WinnebagoScreen2}
           className="rounded-lg w-72 h-auto"
         />
       </section>

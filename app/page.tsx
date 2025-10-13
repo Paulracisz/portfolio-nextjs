@@ -9,6 +9,7 @@ export default function Page() {
   return (
     <>
       <SpeedInsights />
+      <ScrollTopButton />
       <section className="relative py-16 mb-[35%]">
         {/* ==== Blobs ==== */}
         {/* Pink blob – left side */}
@@ -56,7 +57,6 @@ export default function Page() {
       <WorkExperience />
       <AboutWork />
       <Projects />
-      <ScrollTopButton />
     </>
   );
 }
