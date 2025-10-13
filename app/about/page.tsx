@@ -9,6 +9,11 @@ import AboutPic7 from "../assets/aboutpic7.jpeg";
 import Image from "next/image";
 import ScrollTopButton from "app/components/ScrollTopButton";
 
+export const metadata = {
+  title: 'About',
+  description: 'About me.',
+}
+
 const startDate = new Date("May 5, 2021");
 
 const now = new Date();
