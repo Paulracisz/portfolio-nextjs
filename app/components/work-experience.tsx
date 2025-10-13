@@ -61,7 +61,7 @@ const experience: TimelineItem[] = [
     description: [
       "Completed a 12‑month intensive curriculum:",
       "3 months: Vanilla JavaScript & core web fundamentals",
-      "3 months: Modern React (hooks, context, routing)",
+      "3 months: React (props, life-cycle methods, Redux)",
       "3 months: Python & Django backend development",
       "3 months: Full‑stack React + Python projects",
 
