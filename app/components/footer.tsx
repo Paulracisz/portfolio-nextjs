@@ -43,7 +43,18 @@ export default function Footer() {
             <p className="ml-2 h-7">Github</p>
           </a>
         </li>        
-        <li>
+                <li>
+          <a
+            className="flex items-center transition-all hover:text-[#D4AF37]"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://docs.google.com/document/d/e/2PACX-1vS8ZW48dOMonFySjtV7msteRsCeBmps_mVs5LrtEcoWb9pRKSzuM_IFKTM8Nuq3YCgvWlLVRAc5Fj1y/pub"
+          >
+            <ArrowIcon />
+            <p className="ml-2 h-7">Resume</p>
+          </a>
+        </li>
+                <li>
           <a
             className="flex items-center transition-all hover:text-[#D4AF37]"
             rel="noopener noreferrer"
@@ -60,4 +71,6 @@ export default function Footer() {
       </p>
     </footer>
   )
+
+  // current resume link: https://docs.google.com/document/d/e/2PACX-1vS8ZW48dOMonFySjtV7msteRsCeBmps_mVs5LrtEcoWb9pRKSzuM_IFKTM8Nuq3YCgvWlLVRAc5Fj1y/pub
 }
