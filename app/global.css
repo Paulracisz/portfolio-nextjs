@@ -281,3 +281,11 @@ table {
 .data-sources {
   text-decoration: underline;
 }
+
+
+.tags {
+  color: var(--green-text);
+  font-size: 20px;
+  background-color: #ffff;
+  font-weight: 600;
+}
