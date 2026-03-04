@@ -15,6 +15,7 @@ export default function Projects() {
       <span className="tags inline-block px-5 py-3 rounded text-sm font-small">React Native</span>
       <span className="tags inline-block px-5 py-3 rounded text-sm font-small">TypeScript</span>
       <span className="tags inline-block px-5 py-3 rounded text-sm font-small">Expo Go</span>
+      <span className="tags inline-block px-5 py-3 rounded text-sm font-small">Vercel</span>
       <span className="tags inline-block px-5 py-3 rounded text-sm font-small">Free Use Bible API</span>
     </div>
     </>
