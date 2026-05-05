@@ -14,6 +14,9 @@ import NebulaScreen2 from '../assets/nebulascreen2.png';
 import AuroraScreen1 from "../assets/aurorascreen1.webp";
 import WinnebagoScreen1 from '../assets/winnebago-1.webp';
 import WinnebagoScreen2 from '../assets/winnebago-2.webp';
+import MPScreen1 from '../assets/MP-screen-cap-1.png';
+import MPScreen2 from '../assets/MP-screen-cap-2.png';
+import MPScreen3 from '../assets/MP-screen-cap-3.png';
 
 export default function AboutWork() {
   return (
@@ -119,6 +122,33 @@ export default function AboutWork() {
           alt="HVAC control page in Winnebago app"
           src={WinnebagoScreen2}
           className="rounded-lg w-72 h-auto"
+        />
+      </section>
+
+
+            {/* ----- VegaTouch Mira & Eclipse ----- */}
+      <h1 className="mt-20 text-center font-semibold text-5xl mb-8 tracking-tighter">
+        Multiplex Embedded Touchscreen
+      </h1>
+
+            {/* ── Responsive grid ── */}
+      <section className="grid gap-8 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-1 justify-items-center">
+
+
+        <Image
+          alt="Home page in mp screen"
+          src={MPScreen1}
+          className="rounded-lg"
+        />
+        <Image
+          alt="home control page in MP screen"
+          src={MPScreen2}
+          className="rounded-lg"
+        />
+        <Image
+            alt="light control page in MP screen"
+            src={MPScreen3}
+            className="rounded-lg"
         />
       </section>
     </>
