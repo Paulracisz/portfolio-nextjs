@@ -15,6 +15,25 @@ const diffMs = now.getTime() - startDate.getTime();
 const yearsOfExperience = Math.floor(diffMs / (1000 * 60 * 60 * 24 * 365.25));
 
 const experience: TimelineItem[] = [
+    {
+    organization: "Firefly Integrations",
+    icon:  (
+      <Image
+        alt="Firefly Integrations Logo"
+        width={20}
+        height={20}
+        src={FireflyLogo}
+        className="rounded-full object-contain"
+      />
+    ),
+    title: "Embedded Engineer",
+    dates: "May 2025 – Present",
+    description: [
+      "Built EasyGUI-based touchscreen UIs in embedded C, integrating device-side control logic for lights, floorplans, HVAC, motorized systems, and power management across multiple RV product lines.",
+      "Authored and maintained firmware for CLC logic cards, ensuring subsystem reliability and consistent behavior across production hardware deployments.",
+      "Designed always-on low-power UI patterns for embedded touchscreens, optimizing device-side responsiveness and reducing unnecessary wake cycles in live RV environments.",
+    ],
+  },
   {
     organization: "Firefly Integrations",
     icon:  (
@@ -29,20 +48,11 @@ const experience: TimelineItem[] = [
     title: "Mobile Developer",
     dates: "May 2021 – Present",
     description: [
-           // ----- Mobile apps (VegaTouch Mira & Eclipse) -----
-      "Led development of VegaTouch Mira and VegaTouch Eclipse, AngularJS mobile applications (iOS & Android) that serve as the primary control hub for RV smart‑home systems.",
-      "Implemented seamless integration with a wide range of RV subsystems utilizing CAN protocol including:",
-      "HVAC climate control (temperature set‑points, fan modes, zone scheduling)",
-      "Lighting groups (dimming, scene presets, custom RGB lighting modes)",
-      "The Lithionics Battery Monitoring System which included, voltage calculations, diagnostics page with detailed hardware information, and optional rendering based on state selection of user setting.",
-      "Electrical components – inverters, solar‑panel charge controllers, battery management systems",
-      "Motorized accessories – slides, awnings, lifts such as tv lifts, and various machines",
-      // ----- Embedded apps (VegaTouch Orion) -----
-      "Developed VegaTouch Orion – a suite of embedded touchscreen interfaces mounted on standalone screens throughout the RV.",
-      "Implemented core feature set on production units (HVAC, lighting, power‑management, motorized accessories) while adding AV controls:",
-      "Media source selection for Smart TVs such as Roku, Sony, Apple TVs: (Bluetooth, HDMI, streaming services: Netflix, Disney+, Hulu)",
-      "Optimized UI for low‑power, always‑on hardware (One-time binding, idle‑sleep timers)",
-      "Diagnosed and fixed an overnight screen‑reboot bug that caused the display to stay on in Newell Motorhomes’ bedroom units, eliminating unwanted 3 AM wake‑ups and restoring normal operation for customers."
+      "Architected and maintained VegaTouch Mira and VegaTouch Eclipse — cross-platform mobile apps (AngularJS, iOS & Android) serving as the primary control interface for RV smart-home systems across a national customer base.",
+      "Unified CAN-bus-connected subsystems — HVAC, lighting, battery monitoring, inverters, solar, and motorized accessories — into a single cohesive mobile control experience, eliminating the need for multiple discrete control panels.",
+      "Engineered VegaTouch Orion, an embedded touchscreen interface deployed in RV cabins, delivering full-stack control of HVAC, lighting, power, AV, and accessories on resource-constrained hardware.",
+      "Diagnosed and resolved a critical reboot failure affecting Newell Motorhomes production units, restoring stable overnight operation and preventing escalation to a customer-facing recall.",
+      "Shipped full control suite on production hardware — HVAC, lighting, power management, motorized accessories — and extended the platform with AV integration: multi-source TV control supporting Roku, Sony, and Apple TV devices across Bluetooth, HDMI, and streaming services (Netflix, Disney+, Hulu).",
     ],
   },
   {
@@ -57,18 +67,11 @@ const experience: TimelineItem[] = [
       />
     ),
     title: "Software Engineering Student",
-    dates: "October 2019 – October 2020",
+    dates: "October 2019 – October 2020",
     description: [
-      "Completed a 12‑month intensive curriculum:",
-      "3 months: Vanilla JavaScript & core web fundamentals",
-      "3 months: React (props, life-cycle methods, Redux)",
-      "3 months: Python & Django backend development",
-      "3 months: Full‑stack React + Python projects",
-
-      // flagship projects
-      "Built a Pokémon‑style collection game (React front‑end, Python API back‑end)",
-      "Created a Twitter‑like mock social‑media platform that consumed an external API",
-      "Recieved both Front-End Web Development and Full-Stack Development certifications accredited by Butler University."
+      "Completed a 12-month intensive full-stack curriculum covering JavaScript, React, Redux, Python, and Django — culminating in two Butler University-accredited certifications: Front-End Web Development and Full-Stack Development.",
+      "Shipped a Pokémon-style collection game with a React front-end and Python/Django REST API back-end.",
+      "Built a Twitter-like social platform integrating a third-party API for live data consumption.",
     ],
   },
 ];
